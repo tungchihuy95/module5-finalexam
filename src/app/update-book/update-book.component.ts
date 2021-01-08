@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {IBook} from '../../book';
-import {BookService} from '../../book.service';
+import {IBook} from '../book';
+import {BookService} from '../book.service';
 import {ActivatedRoute, Params, Router} from '@angular/router';
 import {FormBuilder} from '@angular/forms';
 

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {IBook} from '../../book';
+import {IBook} from '../book';
 import {Router} from '@angular/router';
-import {BookService} from '../../book.service';
+import {BookService} from '../book.service';
 import {FormBuilder} from '@angular/forms';
 import {HttpClient} from '@angular/common/http';
 

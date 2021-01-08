@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {ListBookComponent} from './books/list-book/list-book.component';
-import {CreateBookComponent} from './books/create-book/create-book.component';
-import {UpdateBookComponent} from './books/update-book/update-book.component';
-import {DeleteBookComponent} from './books/delete-book/delete-book.component';
+import {ListBookComponent} from './list-book/list-book.component';
+import {CreateBookComponent} from './create-book/create-book.component';
+import {UpdateBookComponent} from './update-book/update-book.component';
+import {DeleteBookComponent} from './delete-book/delete-book.component';
+import {DetailComponent} from './detail/detail.component';
 
 const routes: Routes = [
   {
@@ -19,12 +20,12 @@ const routes: Routes = [
     component: UpdateBookComponent
   },
   {
-    path: 'deleteBook',
+    path: 'deleteBook/:id',
     component: DeleteBookComponent
   },
   {
     path: 'details/:id',
-    component: ListBookComponent
+    component: DetailComponent
   }
 ];
 

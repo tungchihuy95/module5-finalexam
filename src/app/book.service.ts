@@ -24,10 +24,10 @@ export class BookService {
   }
 
   delete(id: number): Observable<any> {
-    return this.http.delete(  `${this.URL_API}/${id}`);
+    return this.http.delete(this.URL_API + `/${id}`);
   }
 
-  getBookById(id: number): Observable<IBook> {
-    return this.http.get<IBook>(`${this.URL_API}/${id}`);
+  getBookById(id: number): Observable<any> {
+    return this.http.get<IBook>(this.URL_API + `/${id}`);
   }
 }
